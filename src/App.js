@@ -1,4 +1,6 @@
 import './App.css';
+import mainImg from "../src/assets/logo512.png";
+import mapImg from "../src/assets/map-celebnassem.jpg";
 
 function App() {
     return (
@@ -9,6 +11,8 @@ function App() {
             <div>
                 백도형 ♥ 유선희
             </div>
+
+            <img src={mainImg} width="70%" height="auto" alt=""/>
 
             <div>
                 저희 두 사람, 뽀얀 눈송이 같은 순수한 사랑 모아 인생의 반려자가 되려 합니다.
@@ -22,6 +26,17 @@ function App() {
             <div>
                 유순근 · 강향순 의 장녀 선희
             </div>
+
+            <div>
+                오시는 길
+            </div>
+
+            <div>
+                <img src={mapImg} width="80%" height="auto"/>
+            </div>
+
+            <div>축하 문구</div>
+            <div>페이지 게시판</div>
         </div>
     );
 }
