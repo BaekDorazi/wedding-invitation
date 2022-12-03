@@ -1,10 +1,30 @@
 import './App.css';
 import mainImg from "../src/assets/logo512.png";
 import mapImg from "../src/assets/map-celebnassem.jpg";
+import {useCallback} from "react";
 
 function App() {
+    const randomPosition = useCallback(() => {
+        return Math.floor(Math.random() * window.innerWidth);
+    }, []);
+
+    const createSnow = useCallback(() => {
+        const el = document.createElement("div");
+        el.classList.add('snow');
+        el.style.marginLeft = randomPosition() + 'px';
+        document.body.appendChild(el);
+    }, []);
+
+    const renderSnow = useCallback(() => {
+        for (let i = 0; i < 100; i++) {
+            createSnow();
+        }
+    }, []);
+
     return (
-        <div className="App">
+        <div id="main" className="App">
+            {renderSnow()}
+
             <div>
                 2023년 2월 4일 오후 5시
             </div>
@@ -32,7 +52,7 @@ function App() {
             </div>
 
             <div>
-                <img src={mapImg} width="80%" height="auto"/>
+                <img src={mapImg} width="80%" height="auto" alt=""/>
             </div>
 
             <div>축하 문구</div>
