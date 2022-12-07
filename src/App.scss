@@ -1,10 +1,16 @@
 .App {
+    position: absolute;
     text-align: center;
 }
 
+.neonText {
+    color: #EAEAEA;
+    text-shadow: /* White glow */ 0 0 7px #EAEAEA, 0 0 10px #EAEAEA, 0 0 21px #EAEAEA, /* Green glow */ 0 0 42px #fff, 0 0 82px #fff, 0 0 92px #fff, 0 0 102px #fff, 0 0 151px #fff;
+}
+
 .snow {
-    width: 10px;
-    height: 10px;
+    width: 7px;
+    height: 7px;
     opacity: 0;
     background: #fff;
     border-radius: 50%;
@@ -12,8 +18,8 @@
 }
 
 .snow:nth-of-type(2n) {
-    width: 10px;
-    height: 10px;
+    width: 4px;
+    height: 4px;
     animation-duration: 7s;
     animation-delay: 1s;
 }
