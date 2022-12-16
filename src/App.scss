@@ -1,80 +1,91 @@
 @font-face {
-    font-family: MaruBuri;
-    src: url("./assets/fonts/MaruBuri-Regular.ttf");
+  font-family: MaruBuri;
+  src: url("./assets/fonts/MaruBuri-Regular.ttf");
 }
 
 .App {
-    position: absolute;
-    text-align: center;
-    font-family: 'MaruBuri';
-    font-weight: 700;
+  position: absolute;
+  text-align: center;
+  font-family: 'MaruBuri';
+  font-weight: 700;
 }
 
 .front-area {
-    height: 100%;
-    background: radial-gradient(ellipse at bottom, #1b2735 40%, #090a0f 100%);
+  height: 100%;
+  background: radial-gradient(ellipse at bottom, #1b2735 40%, #090a0f 100%);
 }
 
 .neonText {
-    color: #EAEAEA;
-    text-shadow: 0 0 7px #EAEAEA, 0 0 10px #EAEAEA;
-    font-weight: 500;
+  color: #EAEAEA;
+  text-shadow: 0 0 7px #EAEAEA, 0 0 10px #EAEAEA;
+  font-weight: 500;
 }
 
 .snow {
-    width: 7px;
-    height: 7px;
-    opacity: 0;
-    background: #fff;
-    border-radius: 50%;
-    animation: snow 10s linear infinite;
+  width: 7px;
+  height: 7px;
+  opacity: 0;
+  background: #fff;
+  border-radius: 50%;
+  animation: snow 10s linear infinite;
 }
 
 .snow:nth-of-type(2n) {
-    width: 4px;
-    height: 4px;
-    animation-duration: 7s;
-    animation-delay: 1s;
+  width: 4px;
+  height: 4px;
+  animation-duration: 7s;
+  animation-delay: 1s;
 }
 
 .snow:nth-of-type(2n + 1) {
-    animation-duration: 8s;
-    animation-delay: 2s;
+  animation-duration: 8s;
+  animation-delay: 2s;
 }
 
 .snow:nth-of-type(9n) {
-    animation-duration: 9s;
-    animation-delay: 3s;
+  animation-duration: 9s;
+  animation-delay: 3s;
 }
 
 @keyframes snow {
-    0% {
-        opacity: 0;
-        transform: translateY(0);
-    }
+  0% {
+    opacity: 0;
+    transform: translateY(0);
+  }
 
-    20% {
-        opacity: 1;
-        transform: translate(-15px, 20vh);
-    }
+  20% {
+    opacity: 1;
+    transform: translate(-15px, 20vh);
+  }
 
-    40% {
-        opacity: 1;
-        transform: translate(15px, 40vh);
-    }
+  40% {
+    opacity: 1;
+    transform: translate(15px, 40vh);
+  }
 
-    60% {
-        opacity: 1;
-        transform: translate(-15px, 60vh);
-    }
+  60% {
+    opacity: 1;
+    transform: translate(-15px, 60vh);
+  }
 
-    80% {
-        opacity: 1;
-        transform: translate(0, 80vh);
-    }
+  80% {
+    opacity: 1;
+    transform: translate(0, 80vh);
+  }
 
-    100% {
-        opacity: 1;
-        transform: translateY(100vh);
-    }
+  100% {
+    opacity: 1;
+    transform: translateY(100vh);
+  }
+}
+
+.react-calendar {
+  border: solid 1px #4374D9 !important;
+  border-left: 0px !important;
+  border-right: 0px !important;
+}
+
+.react-calendar__tile--active {
+  color: #fff;
+  background-color: #4374D9;
 }
