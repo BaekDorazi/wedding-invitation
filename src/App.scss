@@ -1,6 +1,13 @@
+@font-face {
+    font-family: MaruBuri;
+    src: url("./assets/fonts/MaruBuri-Regular.ttf");
+}
+
 .App {
     position: absolute;
     text-align: center;
+    font-family: 'MaruBuri';
+    font-weight: 700;
 }
 
 .front-area {
@@ -11,6 +18,7 @@
 .neonText {
     color: #EAEAEA;
     text-shadow: 0 0 7px #EAEAEA, 0 0 10px #EAEAEA;
+    font-weight: 500;
 }
 
 .snow {

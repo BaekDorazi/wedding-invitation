@@ -66,18 +66,22 @@ const App = () => {
             </div>
 
             <div style={{marginTop: "10px"}}>
-                <span style={{fontSize: "1.1rem", fontWeight: "700"}}>백기운 · 이경미</span>
-                <span style={{fontSize: "0.8rem"}}> 의 장남</span>
-                <span style={{fontSize: "1.1rem", color: "#1b2735", fontWeight: "700"}}>도형</span>
+                <span style={{fontSize: "1.3rem", fontWeight: "700"}}>백기운 · 이경미</span>
+                <span style={{fontSize: "1rem"}}> 의 장남</span>
+                <span style={{fontSize: "1.3rem", color: "#4374D9", fontWeight: "700", marginLeft: "5px"}}>도형</span>
             </div>
 
             <div>
-                <span style={{fontSize: "1.1rem", fontWeight: "700"}}>유순근 · 강향순</span>
-                <span style={{fontSize: "0.8rem"}}> 의 장녀</span>
-                <span style={{fontSize: "1.1rem", color: "#1b2735", fontWeight: "700"}}>선희</span>
+                <span style={{fontSize: "1.3rem", fontWeight: "700"}}>유순근 · 강향순</span>
+                <span style={{fontSize: "1rem"}}> 의 장녀</span>
+                <span style={{fontSize: "1.3rem", color: "#4374D9", fontWeight: "700", marginLeft: "5px"}}>선희</span>
             </div>
 
-            <div style={{marginTop: "15px", fontSize: "1.3rem", alignContent: "left"}}>
+            {/*달력*/}
+            
+
+            {/*오시는길*/}
+            <div style={{marginTop: "15px", color: "#4374D9", fontSize: "1.9rem", alignContent: "left"}}>
                 오시는 길
             </div>
 
