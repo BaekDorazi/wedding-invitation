@@ -1,11 +1,13 @@
 import {useCallback, useEffect, useState} from "react";
 import Calendar from "react-calendar";
+import {Accordion, AccordionBody, AccordionHeader, AccordionItem} from 'reactstrap';
 import mainImg from "./assets/img/logo512.png";
 import mapImg from "./assets/img/map-celebnassem.jpg";
 import phoneIcon from "./assets/svg/phone.svg";
 
 import './App.scss';
 import 'react-calendar/dist/Calendar.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const App = () => {
     //웨딩 날짜
@@ -13,6 +15,16 @@ const App = () => {
 
     //남은 일수
     const [remainingDays, setRemainingDays] = useState();
+
+    const [open, setOpen] = useState('0');
+
+    const toggle = (id) => {
+        if (open === id) {
+            setOpen();
+        } else {
+            setOpen(id);
+        }
+    };
 
     //눈송이 위치 랜덤 지정
     const randomPosition = useCallback(() => {
@@ -116,6 +128,37 @@ const App = () => {
                         <img src={phoneIcon} width={"2%"} height={"2%"}/>
                     </a>
                 </span>
+            </div>
+
+            <div style={{marginTop: "15px", padding: "0 30px"}}>
+                <Accordion open={open} toggle={toggle}>
+                    <AccordionItem>
+                        <AccordionHeader targetId="1">신랑측 계좌번호</AccordionHeader>
+                        <AccordionBody accordionId="1">
+                            <div>국민 502901-01-159031 <button>복사</button></div>
+                            <div>백도형</div>
+                        </AccordionBody>
+                        <AccordionBody accordionId="1">
+                            <div>국민 502901-01-159031 <button>복사</button></div>
+                            <div>백기운</div>
+                        </AccordionBody>
+                        <AccordionBody accordionId="1">
+                            <div>국민 502901-01-159031 <button>복사</button></div>
+                            <div>이경미</div>
+                        </AccordionBody>
+                    </AccordionItem>
+                    <AccordionItem>
+                        <AccordionHeader targetId="2">신부측 계좌번호</AccordionHeader>
+                        <AccordionBody accordionId="2">
+                            <div>국민 502901-01-159031 <button>복사</button></div>
+                            <div>유선희</div>
+                        </AccordionBody>
+                        <AccordionBody accordionId="2">
+                            <div>국민 502901-01-159031 <button>복사</button></div>
+                            <div>강향순</div>
+                        </AccordionBody>
+                    </AccordionItem>
+                </Accordion>
             </div>
 
             {/*달력*/}
